@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu compra! - Recetas para Peques</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FBB03B; /* Laranja/Amarelo quente e amigável */
+            --bg-color: #FFFDF8; /* Fundo off-white puxado pro creme */
+            --text-main: #333333;
+            --text-muted: #666666;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .thank-you-container {
+            background-color: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            padding: 50px 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 8px solid var(--primary-color);
+        }
+
+        .icon-success {
+            font-size: 80px;
+            margin-bottom: 15px;
+            animation: bounceIn 1s ease;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .steps-box {
+            background-color: #FFF9E6;
+            padding: 25px;
+            border-radius: 16px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .steps-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #D48806;
+            text-align: center;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .step-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--text-main);
+        }
+
+        .step-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(251, 176, 59, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(251, 176, 59, 0.6);
+        }
+
+        .support-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid #EEE;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .support-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .thank-you-container { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-container">
+        <div class="icon-success">🧸🎉</div>
+        <h1>¡Gracias por tu compra!</h1>
+        <p class="subtitle">Tu pedido está confirmado. Prepárate para disfrutar de las mejores recetas y decirle adiós al estrés en las comidas. 💛</p>
+
+        <div class="steps-box">
+            <h3>¿Cuáles son los siguientes pasos?</h3>
+            
+            <div class="step">
+                <div class="step-icon">📥</div>
+                <div class="step-text">
+                    <h4>1. Revisa tu correo electrónico</h4>
+                    <p>En los próximos minutos recibirás un correo nuestro con el asunto de confirmación.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">📲</div>
+                <div class="step-text">
+                    <h4>2. Busca el botón "DESCARGAR"</h4>
+                    <p>Abre el correo y haz clic en el botón para obtener tu PDF con más de 1000 recetas y tus 6 regalitos.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">🍽️</div>
+                <div class="step-text">
+                    <h4>3. ¡A cocinar!</h4>
+                    <p>Ya puedes empezar a disfrutar del material desde tu móvil, tablet o PC. Acceso de por vida.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="mailto:info.recetaspeques@gmail.com" class="cta-button">Ir a mi correo electrónico</a>
+
+        <div class="support-info">
+            <p>¿Tienes alguna duda o no recibiste el correo? <br>
+            Escríbenos a: <a href="mailto:info.recetaspeques@gmail.com">info.recetaspeques@gmail.com</a></p>
+            <br>
+            <p><small>©️ 2026, Recetas para Peques ®️ - Todos los derechos reservados</small></p>
+        </div>
+    </div>
+
+</body>
+</html>
